@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The full paper for this extraction.">
+  <meta name="author" content="WFGY Extractions">
+  <meta name="keywords" content="wfgy, semanticblueprint, llm, reasoning, governance">
+  <link rel="stylesheet" href="https://esm.sh/anentrypoint-design@latest/dist/247420.css">
+  <script type="module" src="https://esm.sh/anentrypoint-design@latest/dist/247420.js"></script>
+  <title>Paper — WFGY 1.0 — Semantic Blueprint</title>
+</head><body><nav class="navbar bg-base-100 border-b border-base-300 sticky top-0 z-50">
+  <div class="container mx-auto flex items-center justify-between px-4 py-3">
+    <a href="./index.html" class="text-xl font-bold">WFGY 1.0</a>
+    <div class="flex gap-2">
+      <a href="./index.html" class="btn btn-ghost btn-sm">Home</a><a href="./paper.html" class="btn btn-ghost btn-sm">Paper</a><a href="./skills.html" class="btn btn-ghost btn-sm">Skills</a><a href="./original.html" class="btn btn-ghost btn-sm">Original</a>
+    </div>
+  </div>
+</nav><section class="container mx-auto px-4 py-16 max-w-4xl">
+    <h1 class="text-4xl font-bold mb-4">Science paper</h1>
+    <p class="text-lg text-base-content/70 mb-10">The full paper for this extraction.</p>
+    <article class="prose prose-lg max-w-none"><h1>A Geometric Theory of Semantic Coherence in Large Language Models</h1>
+
+<h2>Abstract</h2>
+<p>We present a geometric framework for diagnosing and correcting reasoning failures in large language models, grounded in five interacting mechanisms: the semantic tree anchor, vector-logic partitioning, semantic-boundary navigation, the drunk-transformer correction protocol, and the reasoning-engine core. Each mechanism is defined as a closed-form operator over the model's residual stream and attention geometry, and each is independently witnessable.</p>
+
+<h2>1. Motivation</h2>
+<p>A model that fluently produces an incorrect chain of reasoning has not failed at language. It has failed at coherence under tension. The failure is observable as drift in the trajectory of hidden states across layers — a drift that is locally smooth and globally wrong. Conventional remedies treat the symptom; they do not address the geometry that produced it. The Semantic Blueprint identifies that geometry directly.</p>
+
+<h2>2. The Five Operators</h2>
+
+<h3>2.1 Semantic Tree Anchor</h3>
+<p>Every reasoning step is mapped to a node in a depth-bounded tree whose edges encode entailment, contradiction, or qualification. The anchor is the invariant: the topmost node whose truth is not in question for this trajectory. Drift is measured as the distance from the current node to its nearest ancestor that still entails the anchor.</p>
+
+<h3>2.2 Vector-Logic Partitioning</h3>
+<p>The residual stream is decomposed into orthogonal subspaces — one per logical role. Reasoning failures correspond to leakage between partitions. The corrective is a projection that re-establishes orthogonality before the next attention pass.</p>
+
+<h3>2.3 Semantic Boundary Navigation</h3>
+<p>Boundaries are regions of representation space where small input perturbations cause large output divergence. The navigator detects approach via curvature spikes and routes the trajectory along the geodesic of minimum semantic strain.</p>
+
+<h3>2.4 Drunk-Transformer Correction</h3>
+<p>When output is locally fluent but globally inconsistent, attention heads have entered a drunk regime. The correction is a re-weighting of head outputs against the tree anchor, restoring the relationship between attention and entailment.</p>
+
+<h3>2.5 Reasoning Engine Core</h3>
+<p>The core composes the four prior operators into a single fixed-point iteration. The fixed point is reached when residual change falls below a threshold proportional to the load of the claim under construction.</p>
+
+<h2>3. Witnessability</h2>
+<p>Each operator carries a measurable signature: tree-edit distance, leakage norm, curvature trace, entropy gradient, convergence rate. A run that claims correction but cannot exhibit these signatures has not corrected anything.</p>
+
+<h2>4. Relationship to Subsequent Work</h2>
+<p>The Blueprint is the substrate. WFGY 2.0 packages it as a runtime; 3.0 stresses it under singularity conditions; 4.0 uses it to taxonomize failure; 5.0 deploys it as a governed agent surface.</p>
+
+<h2>5. Conclusion</h2>
+<p>Coherence is not a property of outputs. It is a property of the path that produced them. The Semantic Blueprint is the geometry of that path.</p>
+</article>
+  </section><footer class="bg-base-200 border-t border-base-300 py-10 mt-20">
+  <div class="container mx-auto px-4">
+    <p class="text-base-content/70">WFGY 1.0 — Semantic Blueprint — an extraction from the WFGY ecosystem.</p>
+    <div class="flex gap-4 mt-3 text-sm">
+      <a href="https://github.com/onestardao/WFGY" class="link link-hover">WFGY upstream</a>
+    </div>
+  </div>
+</footer></body></html>
